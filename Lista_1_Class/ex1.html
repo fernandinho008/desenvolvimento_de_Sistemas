@@ -8,6 +8,21 @@
 </head>
 <body>
     <script>
+        class Produto{
+            constructor(nome, preço, quantidade,){
+                this.nome = nome;
+                this.preço = preço;
+                this.quantidade = quantidade;
+            }
+            calcularTotal(){
+            return(this.preço * this.quantidade)
+        }
+
+    }
+    let Produto1 = new Produto("Coca-Cola", 5, 1)
+
+    console.log(Produto1)
+    console.log(`O Valor Total do Produto é ${Produto1.calcularTotal()}`)
         
     </script>
 </body>
