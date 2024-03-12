@@ -15,13 +15,12 @@
               this.area = area;  
             }
             informacoesCasa(){
-                return("Rua 123:"+this.endereco, "2:" + this.numQuartos, "50m²:" + this.area ) 
+                console.log("Rua:"+this.endereco, "numero de quartos:" + this.numeroQuartos, "area:" + this.area ) 
             }
         }
         let Casa1 = new Casa("Rua 123", 2, "50 m²")
 
-        console.log(Casa1)
-        console.log(`As infoemações da casa são: ${Casa1.informacoesCasa}`)
+        console.log(` ${Casa1.informacoesCasa()}`)
     </script>
 </body>
 </html>

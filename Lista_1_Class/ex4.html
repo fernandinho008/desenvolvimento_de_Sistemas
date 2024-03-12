@@ -15,13 +15,12 @@
                 this.armazenamento = armazenamento;
             }
             informacoesCelular(){
-                return("Apple:"+this.marca, "13:"+this.modelo, "256gb:"+armazenamento)
+                console.log("marca:"+this.marca, "modelo:"+this.modelo, "armazenamento:"+this.armazenamento)
             }
         }
         let Celular1 = new Celular("Apple", 13, "256gb")
 
-        console.log(Celular1)
-        console.log(`As informações do celular são: ${Celular1.informacoesCelular}`)
+        console.log(`${Celular1.informacoesCelular()}`)
     </script>
 
 </body>

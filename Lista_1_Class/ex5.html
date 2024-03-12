@@ -15,12 +15,11 @@
                 this.duracao = duracao;
             }
             informacoesFilme(){
-                return("Os Mercenários", "Porradaria", 1.5)
+                console.log("titulo: "+this.titulo, "genero: "+this.genero, "duração:   "+this.duracao)
             }
         }
         let Filme1  =new Filme("Os Mercenários", "Porradaria", 1.5)
-        console.log(Filme1)
-        console.log(`As informacoes do filme são: ${Filme1.informacoesFilme}`)
+        console.log(`${Filme1.informacoesFilme()}`)
     </script>
 </body>
 </html>
