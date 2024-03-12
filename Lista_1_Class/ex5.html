@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Filme{
+            constructor(titulo, genero, duracao){
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duracao = duracao;
+            }
+            informacoesFilme(){
+                return(("Os Mercenários"+this.titulo), ("Porradaria"+this.genero), (1.5+this.duracao))
+            }
+        }
+        let Filme1  =new Filme("Os Mercenários", "Porradaria", 1.5)
+        console.log(Filme1)
+        console.log(`As informacoes do filme são: ${Filme1.informacoesFilme}`)
+    </script>
+</body>
+</html>
